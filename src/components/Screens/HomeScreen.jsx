@@ -5,7 +5,7 @@ import Video from "../Video/Video";
 
 const HomeScreen = () => {
   return (
-    <Container>
+    <Container style={{ marginTop: "70px" }}>
       <CategoryBar />
       <Row>
         {[...new Array(20)].map(() => (
