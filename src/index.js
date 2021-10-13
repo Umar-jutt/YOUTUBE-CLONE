@@ -4,13 +4,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import "./_base.scss";
 import { Provider } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
 import store from "./redux/store";
-
+import "react-lazy-load-image-component/src/effects/blur.css";
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <Router>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </Router>
+  </Provider>,
+
   document.getElementById("root")
 );
